@@ -36,7 +36,7 @@ body {
 }
 
 #start:hover {
-    background-image: url("../images/start_hover.png");
+    filter: brightness(120%);
 }
 
 
