@@ -1,0 +1,202 @@
+:root {
+    --medium-blue: #245edb;
+    --light-blue: #0c8dea;
+}
+
+html {
+    font-family: Microsoft Sans Serif,Verdana,Segoe,sans-serif; 
+}
+
+body {
+    font-family: Microsoft Sans Serif,Verdana,Segoe,sans-serif; 
+    width: 100%;
+    height: 100vh;
+    background-image: url("../images/wallpaper.webp");
+    background-repeat: no-repeat;
+    background-size:cover;
+    margin: 0;
+}
+
+#start {
+    height: 35px;
+    width: 122px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 0 0 0.2rem 0;
+}
+
+.startneutral {
+    background-image: url("../images/start_neutral.png");
+}
+
+.startpressed {
+    background-image: url("../images/start_pushed.png");
+}
+
+#start:hover {
+    background-image: url("../images/start_hover.png");
+}
+
+
+.taskbar {
+    position: absolute;
+    bottom: 0;
+    background-color: #2259d7;
+    width: 100vw;
+    height: 2.3rem;
+    z-index: -5;
+    -moz-box-shadow:    inset 0 2px 15px #000000;
+    -webkit-box-shadow: inset 0 0 15px #000000;
+    box-shadow:         inset 0 0 15px #000000;
+}
+
+
+.taskbarRight {
+    position: absolute;
+    display: flex;
+    justify-content: end;
+    bottom: 0;
+    right: 0;
+    width: 7rem;
+    height: 2.3rem;
+    text-align: center;
+}
+
+.time {
+    background-color: #1289e7;
+    -moz-box-shadow:    inset 0 2px 8px #8cbfe6;
+    -webkit-box-shadow: inset 0 0 8px #8cbfe6;
+    box-shadow:         inset 0 0 8px #8cbfe6;
+    width: 100%;
+    height: 100%;
+}
+
+#time {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    right: 50%;
+    color: white;
+    margin: auto auto auto auto;
+}
+
+#menu {
+    position: absolute;
+    height: 32rem;
+    width: 27.15rem;
+    bottom: 1.3rem;
+    background-image: url("../images/startmenu.png");
+    background-repeat: no-repeat;
+}
+
+
+
+.programs {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 3.5rem;
+    width: 60%;
+    height: 80%;
+}
+
+.program {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto 0 0;
+    width: 100%;
+}
+
+.program:hover {
+    background-color: var(--medium-blue);
+}
+
+.image {
+    height: 2.5rem;
+    width: 2.5rem;
+    margin: 0 0.5rem 0 0.5rem;
+}
+
+.imageSmall {
+    height: 2rem;
+    width: 2rem;
+    margin: 0 0 0 0.5rem;
+}
+
+.notepad {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 200px;
+    right: 500px;
+    width: 500px;
+    height: 500px;
+    border: var(--medium-blue);
+    border-width: 2px;
+    border-style: solid;
+}
+
+.notepadHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 40px;
+    background-color: var(--medium-blue);
+    -moz-box-shadow:    inset 0 1px 7px #000000;
+    -webkit-box-shadow: inset 0 0 7px #000000;
+    box-shadow:         inset 0 0 7px #000000;
+}
+
+.headerLeft {
+    display: flex;
+    flex-direction: row;
+}
+
+.headerRight {
+    margin: auto 0.5rem auto 1rem;
+}
+
+.headerRight img {
+    margin: auto 0 auto 0;
+}
+
+.headerRight img:hover {
+    filter: brightness(150%);
+}
+
+.notepadHeader p {
+    color: white;
+    margin: auto 0 auto 0.5rem;
+}
+
+.notepad textarea {
+    width: 494px;
+    height: 500px;
+    outline: 0;
+    resize: none;
+    
+}
+
+.file {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    height: 25px;
+    width: 100%;
+    background-color: #f4f4f0;
+}
+
+.file p {
+    margin: auto 0 auto 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.file p:hover {
+    background-color: darkgray;
+}
+
+

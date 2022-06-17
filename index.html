@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Ollie Hughes</title>
+</head>
+<body>
+    <div id="menu" hidden>
+        <div class="programs">
+            <div class="program" onclick="toggleNotepad()" >
+                <img class="image" src="images/notepad.webp">
+                <p class="programText">Notepad</p>
+            </div>
+            <div class="program">
+                <img class="image" src="images/Calc.png">
+                <p class="programText">Calculator</p>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="startneutral" id="start" onclick="toggleStart()">
+    </div>
+    <div class="taskbar">
+    </div>
+    <div class="taskbarRight">
+        <div class="time">
+            <p id="time"></p>
+        </div>
+    </div>
+    <div class="notepad" id="notepad" style="display:none;">
+        <div class="notepadHeader">
+            <div class="headerLeft">
+                <img class="imageSmall" src="images/notepad.webp">
+                <p>Untitled - Notepad</p>
+            </div>
+            <div class="headerRight">
+                <img src="images/minimize.png" onclick="toggleNotepad()">
+                <img src="images/square.png">
+                <img src="images/X.png" onclick="toggleNotepad()">
+            </div>
+        </div>
+        <div class="file">
+            <p>File</p>
+            <p>Edit</p>
+            <p>Format</p>
+            <p>View</p>
+            <p>Help</p> 
+        </div>
+        <textarea>Hi, my name's Ollie Hughes. I'm a junior web developer currently working with Drupal. I thought i'd create this site as an interesting side project.</textarea>
+        
+    </div>
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
